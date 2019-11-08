@@ -2,7 +2,15 @@ import React from 'react';
 import Display from './Display';
 
 class Dashboard extends React.Component {
+
+  state = {
+    balls: 0,
+    strikes: 0
+  };
+
   render() {
+
+
     return (
     <div className="container">
 

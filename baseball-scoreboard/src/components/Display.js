@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Display = () => {
+const Display = props => {
   return (
     <div className="container">
-      Square Container and Dashboard stuff goes here!
+      Takes in props from the dash and they show up here
     </div>
   )
 }

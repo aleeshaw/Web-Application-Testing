@@ -102,3 +102,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Notes file
+processnotes.txt 

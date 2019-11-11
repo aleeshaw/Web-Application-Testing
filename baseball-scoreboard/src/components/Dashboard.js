@@ -15,6 +15,7 @@ class Dashboard extends React.Component {
       ball: 0,
       strike: 0
     });
+    window.alert("HIT!");
   };
 
   ballHandler = event => {
@@ -28,6 +29,10 @@ class Dashboard extends React.Component {
       ball: 0,
       strike: 0
     });
+
+    if(this.state.ball === 3) {
+      window.alert("BASE ON BALLS!");
+    };
   };
 
   foulHandler = event => {
@@ -53,6 +58,9 @@ class Dashboard extends React.Component {
       ball: 0,
       strike: 0
     });
+    if(this.state.strike === 2) {
+      window.alert("BATTER OUT!!");
+    };
   };
 
   render() {

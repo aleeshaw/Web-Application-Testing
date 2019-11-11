@@ -4,8 +4,8 @@ const Display = props => {
   return (
     <div className="container">
       Takes in props from the dash and they show up here
-      <div className="strikes">{props.strikes}</div>
-      <div className="balls">{props.balls}</div>
+      <div className="strikes">Strikes: {props.strikes}</div>
+      <div className="balls">Balls: {props.balls}</div>
     </div>
   )
 }

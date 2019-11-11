@@ -1,5 +1,6 @@
 import React from 'react';
 import Display from './Display';
+import '../styling/Dashboard.css';
 
 class Dashboard extends React.Component {
 
@@ -9,6 +10,7 @@ class Dashboard extends React.Component {
   };
 
   //Button event handlers
+
   hitHandler = event => {
     //sets ball and strike state to 0
     this.setState({
@@ -72,27 +74,20 @@ class Dashboard extends React.Component {
           balls={this.state.ball}
         />
 
-        Square div that shows display.
-
         <div className="buttons">
-          <button 
-            onClick={this.hitHandler}
-          >
+          <button onClick={this.hitHandler}>
             Hit
           </button>
-          <button
-            onClick={this.ballHandler}
-          >
+
+          <button onClick={this.ballHandler}>
             Ball
           </button>
-          <button
-            onClick={this.foulHandler}
-          >
+
+          <button onClick={this.foulHandler}>
             Foul
           </button>
-          <button
-            onClick={this.strikeHandler}
-          >
+
+          <button onClick={this.strikeHandler}>
             Strike
           </button>
         </div>

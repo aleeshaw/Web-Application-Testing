@@ -3,18 +3,28 @@ import * as rtl from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Dashboard from './Dashboard';
 
+
+const mockState = {
+  ball: 1,
+  strike: 1
+};
+
+ const mockClick = obj => {
+  obj.strike < 2 
+  ? obj.strike + 1
+  : obj.strike - 2;
+  return obj.strike + 1;
+};
+
+test("adds one to strike state, unless < 2, then set's to 0", () => {
+  expect(mockClick(mockState)).toBe(2);
+  expect(mockClick(mockState)).not.toBe(3);
+});
+
+//can add more specific scenario tests where there batter strikes out, gits a hit, etc.
+
 test('renders display component', () => {
   rtl.render(<Dashboard />);
 });
 
-// test('hitHandler: adds sets both ball and strike state to 0', () => {
-//   expect(this.state.ball).toBe(0);
-//   expect(this.state.strike).toBe(0);
-// });
-
-// test("ballHandler: adds +1 to ball state, unless it's at 3, then strike and ball states are set to O", () => {
-//   expect(this.state.ball).toBe(this.state.ball+1);
-//   expect(this.state.ball).not.toBe(4);
-// })
-//I don't think this will accurately reflect the event handler.
 //TODO go through the documentation and look for simulation tips...Also this stackoverflow link https://stackoverflow.com/questions/42984108/testing-react-event-handlers 

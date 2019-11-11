@@ -7,7 +7,7 @@ const Display = props => {
       <div className="strikes">Strikes: {props.strikes}</div>
       <div className="balls">Balls: {props.balls}</div>
     </div>
-  )
-}
+  );
+};
 
 export default Display;

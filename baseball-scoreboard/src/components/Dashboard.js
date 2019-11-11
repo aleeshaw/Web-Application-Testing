@@ -15,38 +15,44 @@ class Dashboard extends React.Component {
       ball: 0,
       strike: 0
     });
-    console.log("hit clicked!", this.state);
   };
-  ballHandler = event => {
-    //adds +1 to ball state, unless it's at 3, then strike and ball states are set to O
 
-    
-    
+  ballHandler = event => {
+    //adds +1 to ball state, unless it's at 3, then strike and ball states are set to O.    
     this.state.ball < 3 
-    
+
     ? this.setState({
       ball: this.state.ball + 1
     })
     : this.setState({
       ball: 0,
       strike: 0
-    })
-
-    
-
-    // this.setState({
-    //   ball: this.state.ball + 1
-    // });
-
-    console.log("ball clicked!", this.state);
+    });
   };
+
   foulHandler = event => {
     //adds +1 to strike state, unless it's at 2, then it stays at 2.
-    console.log("foul clicked!");
+
+    this.state.strike < 2
+    ? this.setState({
+      strike: this.state.strike + 1
+    })
+    : this.setState({
+      strike: 2
+    });
   };
+
   strikeHandler = event => {
     //adds +1 to strike state, unless it's at 2, then strike and ball state are set to 0
-    console.log("strike clicked!");
+    
+    this.state.strike < 2
+    ? this.setState({
+      strike: this.state.strike + 1
+    })
+    : this.setState({
+      ball: 0,
+      strike: 0
+    });
   };
 
   render() {

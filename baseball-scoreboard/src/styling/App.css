@@ -1,3 +1,12 @@
+:root {
+  /*batman themed colors :D */
+  --bright-yellow: #fdff00;
+  --dark-yellow: #988829;
+  --darest-gray: #242424;
+  --dark-blue-gray: #282e3c;
+  --b-man-purple: #505c7c;
+}
+
 .App {
   text-align: center;
 }

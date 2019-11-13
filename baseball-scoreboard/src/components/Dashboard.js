@@ -67,7 +67,7 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container dash">
 
         <Display 
           strikes={this.state.strike}

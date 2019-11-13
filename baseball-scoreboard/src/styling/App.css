@@ -7,6 +7,10 @@
   --b-man-purple: #505c7c;
 }
 
+body {
+  background-color: var(--darest-gray);
+}
+
 .App {
   text-align: center;
 }
@@ -28,4 +32,8 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.app-head {
+  color: var(--bright-yellow);
 }

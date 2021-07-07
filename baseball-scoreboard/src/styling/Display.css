@@ -1,0 +1,24 @@
+.container {
+  color: var(--b-man-purple);
+}
+
+.container .display {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.display-info {
+  display: flex;
+  margin: 10px;
+  height: 200px;
+}
+
+.number-info {
+  color: var(--dark-yellow);
+  background-color: var(--dark-blue-gray);
+  border-radius: 3px;
+  width: 50px;
+  height: 70px;
+  align-content: flex-end;
+}
